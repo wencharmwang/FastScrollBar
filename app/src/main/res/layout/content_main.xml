@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wencharm.fastscrollbar.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/section_title"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        android:background="@drawable/section_title_bg"/>
+
+    <com.wencharm.fastscrollbar.FastScroller
+        android:id="@+id/scroller"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/scroll_index_inset_bg"/>
+
+</FrameLayout>
